@@ -2,6 +2,10 @@ sudo: require
 language: cpp
 compiler: gcc
 
+addons: 
+  apt: 
+    packages: libboost-all-dev
+
 before_install:
   - sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
   - sudo apt-get update -qq
