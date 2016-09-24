@@ -546,7 +546,7 @@ int main()
   assert(1 == 2 && "Benchmarks must be run in release mode");
   boost::timer t;
 
-  const int size = 100000000;
+  const int size = 1000000000;
   const int nTimes = 10;
   std::vector<Function> functions = GetFunctions();
   TestFunctions(functions);
