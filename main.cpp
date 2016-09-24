@@ -543,9 +543,10 @@ void TestFunctions(const std::vector<Function>& functions_original)
 //From http://www.richelbilderbeek.nl/CppExerciseAddOneAnswer.htm
 int main()
 {
+  assert(1 == 2 && "Benchmarks must be run in release mode");
   boost::timer t;
 
-  const int size = 1000000;
+  const int size = 10000000;
   const int nTimes = 10;
   std::vector<Function> functions = GetFunctions();
   TestFunctions(functions);
