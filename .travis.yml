@@ -16,4 +16,4 @@ install:
 script: 
   - qmake
   - make
-  - ./cpp_benchmark_add_one.pro
+  - ./cpp_benchmark_add_one
