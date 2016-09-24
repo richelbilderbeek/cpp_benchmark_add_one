@@ -15,5 +15,5 @@ install:
 
 script: 
   - qmake
-  - make
+  - make release
   - ./cpp_benchmark_add_one
