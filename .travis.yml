@@ -1,17 +1,17 @@
-sudo: require
 language: cpp
-compiler: gcc
+dist: xenial
+compiler:
+  - gcc
+  - clang 
 
 addons: 
   apt: 
-    packages: libboost-all-dev
-
-before_install:
-  - sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
-  - sudo apt-get update -qq
+    packages: 
+      - libboost-all-dev
 
 install: 
-  - sudo apt-get install -qq g++-5
+  # Qt5
+  - sudo apt-get install -qq qt5-qmake qt5-default
 
 script: 
   - qmake
